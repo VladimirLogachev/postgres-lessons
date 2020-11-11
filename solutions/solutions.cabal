@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 25608193e20e259a979caa2be12ab22d29b84c8a7fdcd97a2bb66228299ef866
+-- hash: 82a92d48ae9bb2870ed39a6939a1f5b6d1628b1fa07f4d15100d34c61bffba92
 
 name:           solutions
 version:        0.0.0
@@ -15,6 +15,7 @@ build-type:     Simple
 executable haskell-solutions
   main-is: Main.hs
   other-modules:
+      Ch03
       Connect
       Paths_solutions
   hs-source-dirs:
@@ -22,8 +23,6 @@ executable haskell-solutions
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , conduit
-    , monad-logger
     , network
     , postgresql-typed
     , text

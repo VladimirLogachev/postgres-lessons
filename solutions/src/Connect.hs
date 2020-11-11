@@ -4,8 +4,6 @@ module Connect where
 
 import Database.PostgreSQL.Typed.Protocol
 import qualified Network.Socket as Net
-import           Database.PostgreSQL.Typed
-import           Database.PostgreSQL.Typed.Query
 
 db :: PGDatabase
 db = PGDatabase
@@ -18,6 +16,3 @@ db = PGDatabase
   , pgDBLogMessage = print
   , pgDBTLS = TlsDisabled
   }
-
-runQuery :: PGConnection -> PGSimpleQuery a -> IO [a]
-runQuery conn query = pgQuery conn query
