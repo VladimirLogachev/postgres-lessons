@@ -11,4 +11,9 @@ docker-compose up
 
 # psql
 docker-compose exec db psql -U admin -d demo
+
+
+code solutions/
+stack run
+
 ```

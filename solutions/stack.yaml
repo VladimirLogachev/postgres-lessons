@@ -1,0 +1,12 @@
+resolver: lts-16.18
+
+packages:
+- .
+
+allow-newer: true
+
+extra-deps:
+- postgresql-typed-0.6.1.2
+
+# Allow a newer minor version of GHC than the snapshot specifies
+# compiler-check: newer-minor
