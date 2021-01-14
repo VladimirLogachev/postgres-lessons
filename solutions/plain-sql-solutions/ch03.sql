@@ -51,6 +51,12 @@ DELETE 0
 Самостоятельно смоделируйте описанную ситуацию, подобрав условие, которому гарантированно
 не соответствует ни одна строка в таблице «Самолеты» (aircrafts).
  */
+
+-- 1 deleted 
 DELETE FROM aircrafts
 WHERE aircraft_code = 'SU1';
 
+
+-- 0 deleted 
+DELETE FROM aircrafts
+WHERE aircraft_code = '???';
